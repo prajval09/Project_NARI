@@ -1893,7 +1893,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         }
 
         p {
-            padding-bottom: 1em
+            /* padding-bottom: 1em */
         }
 
         p:not(.has-background):last-of-type {
@@ -8091,6 +8091,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
             background-size: cover
         }
 
+        .et_pb_fullwidth_header_new {
+            /* padding: 50px 0; */
+            position: relative;
+            background-position: 50%;
+            background-size: cover
+        }
+
         .et_pb_fullwidth_header p {
             padding-bottom: 0
         }
@@ -8959,6 +8966,63 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
             }
         }
     </style>
+
+    <!-- Footer styling  -->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+            /* .container-fluid{
+        position: absolute;
+        bottom: 0;
+    } */
+
+    .footer-row {
+      background-color: #222222;
+      color: #ffffff; /* Text color */
+      padding: 20px 0; /* Adjust padding as needed */
+      justify-content: center;
+    }
+    .footer-links {
+      list-style: none;
+      padding-left: 0;
+      text-align: start; /* Aligning the text in the center */
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+      /* display: inline-block; */
+      margin-right: 10px; /* Add spacing between list items */
+    }
+    .footer-links li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer-links li a:hover {
+      color: #cccccc;
+    }
+    /* Green bullet points */
+    .footer-links li::before {
+      content: "\2022"; /* Bullet point character */
+      color: #00ff00; /* Green color */
+      font-size: 1.5em; /* Adjust bullet point size */
+      margin-right: 5px; /* Add space between bullet point and text */
+    }
+    /* 3x3 grid layout */
+    .footer-col {
+      width: 33.33%; /* Each column takes up one-third of the width */
+      vertical-align: top; /* Align content at the top of each column */
+      display: flex;
+      justify-content: center; 
+
+    }
+    .acent{
+        align-items: center;
+        text-align: center;
+        align-self: center;
+    }
+    </style>
+
     <link rel='preload' id='divi-dynamic-css' href='wp-content/et-cache/421/et-divi-dynamic-421.css?ver=1709623347'
         as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
     <link rel='stylesheet' id='wpcw-css' href='wp-content/plugins/contact-widgets/assets/css/style.min.css?ver=1.0.1'
@@ -9952,9 +10016,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
                                     <section
-                                        class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_animated et_pb_text_align_left et_pb_bg_layout_dark">
+                                        class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_animated et_pb_text_align_left et_pb_bg_layout_dark" style="padding: 0px 0px 28px 0px;" >
 
-
+                                        
 
 
                                         <div class="et_pb_fullwidth_header_container left">
@@ -10129,7 +10193,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
                                 </div>
-                                <div class="et_pb_section et_pb_section_5 et_pb_fullwidth_section et_section_regular">
+                                <div class="et_pb_section et_pb_section_5 et_pb_fullwidth_section et_section_regular" style="padding: 0px;">
 
 
 
@@ -10137,8 +10201,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
                                     <section
-                                        class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_1 et_animated et_pb_text_align_left et_pb_bg_layout_dark">
-
+                                    style="padding: 0px;"
+                                    class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_1 et_animated et_pb_text_align_left et_pb_bg_layout_dark">
 
 
 
@@ -10242,15 +10306,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
                                                                 <a
                                                                     href="https://www.podomatic.com/podcasts/anilrajvanshi/episodes/2023-11-01T21_49_44-07_00">The
                                                                     podcast of the speech is here.</a><br />
-                                                                <h1><img decoding="async"
+                                                                <div style="display: flex; justify-content: center; margin: 25px 0px;">
+                                                                    <img decoding="async"
                                                                         src="wp-content/uploads/2023/11/IMG-20231030-WA0053-300x200.jpg"
-                                                                        width="477" height="318" alt="" /></h1>
+                                                                        width="477" height="318" alt="" /></div>
                                                             </li>
+                                                            <li> The archived <a
+                                                                    href="https://nariphaltan.org/latest-news.htm">news are
+                                                                    available here.</a></li>
                                                         </ul>
                                                     </ul>
-                                                    <p> The archived <a
-                                                            href="https://nariphaltan.org/latest-news.htm">news are
-                                                            available here.</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -10521,78 +10586,34 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
             </div>
 
 
-            <footer id="main-footer">
-
-                <div class="container">
-                    <div id="footer-widgets" class="clearfix">
-                        <div class="footer-widget"></div>
-                        <div class="footer-widget">
-                            <div id="nav_menu-11" class="fwidget et_pb_widget widget_nav_menu">
-                                <div class="menu-akrwritings-container">
-                                    <ul id="menu-akrwritings" class="menu">
-                                        <li id="menu-item-1553"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1553">
-                                            <a href="https://nariphaltan.org" aria-current="page">Home</a></li>
-                                        <li id="menu-item-1554"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1554">
-                                            <a href="https://nariphaltan.org/about-nari.htm">About NARI</a></li>
-                                        <li id="menu-item-1555"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1555">
-                                            <a href="https://nariphaltan.org/agriculture.htm">Agriculture</a></li>
-                                        <li id="menu-item-1556"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556">
-                                            <a href="https://nariphaltan.org/renewable-energy.htm">Renewable Energy</a>
-                                        </li>
-                                        <li id="menu-item-1557"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1557">
-                                            <a href="https://nariphaltan.org/animal-husbandry.htm">Animal Husbandry</a>
-                                        </li>
-                                        <li id="menu-item-1558"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1558">
-                                            <a href="https://nariphaltan.org/sustainability.htm">Sustainability</a></li>
-                                        <li id="menu-item-1561"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561">
-                                            <a href="https://nariphaltan.org/our-impact.htm">Our Impact</a></li>
-                                        <li id="menu-item-1559"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559">
-                                            <a href="https://nariphaltan.org/work-with-nari.htm">Work with NARI</a></li>
-                                        <li id="menu-item-1560"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1560">
-                                            <a href="https://nariphaltan.org/donate.htm">Donate</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+            <div class="container-fluid">
+                <footer class="row footer-row ">
+                  <div class="col-md-4 align-middle footer-col">
+                    <div class="fst">
+                    <ul class="footer-links">
+                      <li><a href="https://nariphaltan.org">Home</a></li>
+                      <li><a href="https://nariphaltan.org/about-nari.htm">About NARI</a></li>
+                      <li><a href="https://nariphaltan.org/agriculture.htm">Agriculture</a></li>
+                    </ul>
                     </div>
                 </div>
-
-
-
-                <div id="footer-bottom">
-                    <div class="container clearfix">
-                        <ul class="et-social-icons">
-
-                            <li class="et-social-icon et-social-facebook">
-                                <a href="#" class="icon">
-                                    <span>Facebook</span>
-                                </a>
-                            </li>
-                            <li class="et-social-icon et-social-twitter">
-                                <a href="#" class="icon">
-                                    <span>Twitter</span>
-                                </a>
-                            </li>
-                            <li class="et-social-icon et-social-rss">
-                                <a href="https://nariphaltan.org/feed/" class="icon">
-                                    <span>RSS</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div id="footer-info">© Copyright 2019, Nimbkar Agricultural research Institute</div>
-                    </div>
+                <div class="col-md-4 align-middle footer-col">
+                    <ul class="footer-links">
+                        <li><a href="https://nariphaltan.org/renewable-energy.htm">Renewable Energy</a></li>
+                        <li><a href="https://nariphaltan.org/animal-husbandry.htm">Animal Husbandry</a></li>
+                        <li><a href="https://nariphaltan.org/sustainability.htm">Sustainability</a></li>
+                    </ul>
                 </div>
-            </footer>
+                <div class="col-md-4 align-middle footer-col">
+                    <ul class="footer-links">
+                        <li><a href="https://nariphaltan.org/our-impact.htm">Our Impact</a></li>
+                        <li><a href="https://nariphaltan.org/work-with-nari.htm">Work with NARI</a></li>
+                        <li><a href="https://nariphaltan.org/donate.htm">Donate</a></li>
+                    </ul>
+                </div>
+                <a class="acent">© Copyright 2019, Nimbkar Agricultural research Institute</a>
+                </footer>
+              </div>
         </div>
 
 
